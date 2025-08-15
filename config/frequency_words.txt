@@ -1,5 +1,7 @@
 AI数据湖服务
 
+火山引擎
+AI数据湖服务
 LAS
 
 数据湖
@@ -7,6 +9,7 @@ LAS
 Data+AI
 
 Databricks
+！
 
 snowflake
 
@@ -16,10 +19,9 @@ Data AI
 
 数智平台
 
+腾讯
 AI数据湖服务TCLake
-
 TCLake
 
 千帆数据智能平台 DataBuilder
-
 DataBuilder
