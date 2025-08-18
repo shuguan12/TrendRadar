@@ -24,7 +24,7 @@ crawler:
 #   • 适用场景：避免重复信息干扰
 
 report:
-  mode: "daily" # 可选: "daily"|"incremental"|"current"
+  mode: "incremental" # 可选: "daily"|"incremental"|"current"
   rank_threshold: 5 # 排名高亮阈值
 
 notification:
@@ -42,32 +42,51 @@ notification:
 
 # 用于让关注度更高的新闻在更前面显示，合起来是 1 就行
 weight:
-  rank_weight: 0.6 # 排名权重
-  frequency_weight: 0.3 # 频次权重
-  hotness_weight: 0.1 # 热度权重
+  rank_weight: 0.3 # 排名权重
+  frequency_weight: 0.5 # 频次权重
+  hotness_weight: 0.2 # 热度权重
 
 # 增加无聊的小知识
 # 这里的 name 你可以定义任意名称，只具有显示作用，不会影响数据的处理
 platforms:
+  # 【保留核心综合平台】（获取行业舆情）
+  - id: "zhihu"
+    name: "知乎-数据智能话题"  # 聚焦AI技术讨论
+  - id: "wallstreetcn-hot"
+    name: "华尔街见闻-科技板块"  # 追踪金融科技应用
   - id: "toutiao"
     name: "今日头条"
   - id: "baidu"
     name: "百度热搜"
-  - id: "wallstreetcn-hot"
-    name: "华尔街见闻"
-  - id: "thepaper"
-    name: "澎湃新闻"
-  - id: "bilibili-hot-search"
-    name: "bilibili 热搜"
-  - id: "cls-hot"
-    name: "财联社热门"
-  - id: "ifeng"
-    name: "凤凰网"
-  - id: "tieba"
-    name: "贴吧"
   - id: "weibo"
     name: "微博"
   - id: "douyin"
     name: "抖音"
-  - id: "zhihu"
-    name: "知乎"
+  # 【新增垂直技术平台】（精准匹配多模态数据湖）
+  - id: "datafun"
+    name: "DataFunTalk"  # 技术社区，含火山引擎等厂商方案分享
+  - id: "volcengine-dev"
+    name: "火山引擎开发者社区"  # 第一时间获取LAS AI/MCP架构更新
+  - id: "matrixone"
+    name: "MatrixOne Intelligence"  # 多模态数据智能解决方案动态
+  - id: "ai-times"
+    name: "AI科技评论"  # 2025多模态技术趋势深度分析
+  # 本次新增高相关平台（技术/产品/资讯类）
+  - id: "v2ex"
+    name: "V2EX 最新分享"  # 技术开发者讨论，可能涉及数据湖工具测评
+  - id: "ithome"
+    name: "IT之家-AI频道"  # 筛选AI+大数据板块，覆盖厂商动态（如Databricks新品）
+  - id: "solidot"
+    name: "Solidot-科技新闻"  # 开源技术社区，追踪Hadoop/Spark生态更新
+  - id: "hacker-news"
+    name: "Hacker News"  # 全球顶级技术社区，高概率出现多模态数据湖前沿论文
+  - id: "product-hunt"
+    name: "Product Hunt"  # 新产品发布平台，可捕获AI数据工具（如向量数据库新品）
+  - id: "github-today"
+    name: "Github Today"  # 监控多模态数据湖相关开源项目（如Lance格式优化）
+  - id: "sspai"
+    name: "少数派-效率工具"  # 筛选「数据智能」专栏，获取轻量化工具测评
+  - id: "juejin"
+    name: "稀土掘金-大数据"  # 聚焦国内开发者实践，如「火山引擎LAS多模态落地案例」
+  - id: "github"
+    name: "github"  # 聚焦github
