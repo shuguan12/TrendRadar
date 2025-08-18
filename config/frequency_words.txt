@@ -1,27 +1,40 @@
-AI数据湖服务
+# 【核心技术词组】必含多模态+数据湖双关键词（精准度最高）
+多模态数据湖
+湖仓一体+多模态
+非结构化数据湖
+LAS AI+多模态
+ByteHouse+向量检索
 
-火山引擎
-AI数据湖服务
-LAS
-
-数据湖
-
-Data+AI
-
-Databricks
-！
-
-snowflake
-
-Catalog
-
-Data AI
-
-数智平台
+# 【厂商方案词组】聚焦头部玩家的多模态解决方案
+火山引擎+MCP
+Databricks+Lakehouse AI
+MatrixOne Intelligence
+TCLake+跨模态
 
 腾讯
-AI数据湖服务TCLake
-TCLake
++TCLake
 
-千帆数据智能平台 DataBuilder
-DataBuilder
+百度
++DataBuilder
+
+阿里
++数据湖
+
+# 【技术挑战词组】排除纯结构化数据场景
+数据降噪+多模态
+小文件治理+非结构化
+GPU调度优化+数据湖
+动态版本管理+VLM
+
+# 【行业场景词组】锁定高价值应用领域
+智能驾驶数据湖
+RAG+企业知识库
+多模态舆情分析
+具身智能训练数据
+
+# 【过滤词】强制排除无关领域（以!开头）
+!数智平台
+!智慧城市
+!消费电子
+!社交娱乐
+!传统数仓
